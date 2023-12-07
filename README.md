@@ -1,8 +1,5 @@
-# React + Vite
+![image](https://github.com/ShahbazVK/3D-Shirt-Design/assets/63925374/5cfba284-a2cf-49e1-8496-13433e5f1839)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/ShahbazVK/3D-Shirt-Design/assets/63925374/b5c9bfbf-74ca-4c19-9cfc-bb9004364d5c)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/ShahbazVK/3D-Shirt-Design/assets/63925374/880ece19-1055-4494-bb9a-1b54cd3013cc)
