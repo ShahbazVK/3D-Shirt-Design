@@ -31,8 +31,8 @@ const Customizer = () => {
   const handleDecals = (type, result) => {
     const decalType = DecalTypes[type];
     state[decalType.stateProperty] = result;
-    if (!activeFilterTab[decalType.FilterTab]) {
-      handleActiveFilterTab(decalType.FilterTab);
+    if (!activeFilterTab[decalType.filterTab]) {
+      handleActiveFilterTab(decalType.filterTab);
     }
   };
   const handleActiveFilterTab = (tabName) => {
@@ -86,7 +86,11 @@ const Customizer = () => {
                     <Tab
                       key={key}
                       tab={tab}
-                      handleClick={() => setactiveEditorTab(tab.name)}
+                      handleClick={() => {
+                        if (activeEditorTab === tab.name) {
+                          setactiveEditorTab("");
+                        } else setactiveEditorTab(tab.name);
+                      }}
                     />
                   );
                 })}

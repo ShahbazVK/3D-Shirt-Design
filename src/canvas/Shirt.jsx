@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { easing } from "maath";
 import { useSnapshot } from "valtio";
 import state from "../store/index";

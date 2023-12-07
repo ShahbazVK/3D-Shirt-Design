@@ -13,9 +13,10 @@ const CustomButton = ({ type, title, handleClick, customStyles }) => {
       };
     } else if (type === "outline") {
       return {
-        borderColor: snap.color,
+        borderColor: "white",
         color: getContrastingColor(snap.color),
         borderWidth: "1px",
+        backgroundColor: snap.color,
       };
     }
   };

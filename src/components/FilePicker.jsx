@@ -27,7 +27,12 @@ const FilePicker = ({ file, setfile, readFile }) => {
         </label>
         <p
           className="mt-2 text-gray-500 text-xs truncate"
-          style={{ color: getContrastingColor(snap.color) }}
+          style={{
+            color:
+              window.innerWidth < 535
+                ? getContrastingColor(snap.color)
+                : "black",
+          }}
         >
           {file === "" ? "No file selected" : file.name}
         </p>
@@ -37,13 +42,13 @@ const FilePicker = ({ file, setfile, readFile }) => {
           type={"outline"}
           title={"Logo"}
           handleClick={() => file && readFile("logo")}
-          customStyles={"text-xs"}
+          customStyles={`text-xs`}
         />
         <CustomButton
           type={"filled"}
           title={"Full"}
           handleClick={() => file && readFile("full")}
-          customStyles={"text-xs"}
+          customStyles={`text-xs`}
         />
       </div>
     </div>
